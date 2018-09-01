@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NextViewController.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 100, 30)];
+    [btn setBackgroundColor:[UIColor cyanColor]];
+    [btn setTitle:@"Click" forState:(UIControlStateNormal)];
+    [btn addTarget:self action:@selector(next) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:btn];
 }
 
+- (void)next {
+    NextViewController *next = [[NextViewController alloc] init];
+    [self.navigationController pushViewController:next animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
 
 @end

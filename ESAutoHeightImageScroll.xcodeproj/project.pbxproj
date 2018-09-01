@@ -15,6 +15,10 @@
 		041FA4A0213936A000278317 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FA49F213936A000278317 /* main.m */; };
 		041FA4AA213936A000278317 /* ESAutoHeightImageScrollTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FA4A9213936A000278317 /* ESAutoHeightImageScrollTests.m */; };
 		041FA4B5213936A000278317 /* ESAutoHeightImageScrollUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FA4B4213936A000278317 /* ESAutoHeightImageScrollUITests.m */; };
+		041FA4C521395F9400278317 /* ESAutoHeightImageScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FA4C421395F9400278317 /* ESAutoHeightImageScroll.m */; };
+		041FA528213A3C4A00278317 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 041FA527213A3C4A00278317 /* timg.jpeg */; };
+		041FA52B213A3E8500278317 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FA52A213A3E8500278317 /* NextViewController.m */; };
+		8ECC3B6C9BA2D8518B3B2D37 /* libPods-ESAutoHeightImageScroll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69660EF7005645A78DD8DC66 /* libPods-ESAutoHeightImageScroll.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		041FA4B0213936A000278317 /* ESAutoHeightImageScrollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESAutoHeightImageScrollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		041FA4B4213936A000278317 /* ESAutoHeightImageScrollUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESAutoHeightImageScrollUITests.m; sourceTree = "<group>"; };
 		041FA4B6213936A000278317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041FA4C321395F9400278317 /* ESAutoHeightImageScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAutoHeightImageScroll.h; sourceTree = "<group>"; };
+		041FA4C421395F9400278317 /* ESAutoHeightImageScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESAutoHeightImageScroll.m; sourceTree = "<group>"; };
+		041FA527213A3C4A00278317 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		041FA529213A3E8500278317 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		041FA52A213A3E8500278317 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		2035277EFD703A109CF7FFB4 /* Pods-ESAutoHeightImageScroll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESAutoHeightImageScroll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESAutoHeightImageScroll/Pods-ESAutoHeightImageScroll.debug.xcconfig"; sourceTree = "<group>"; };
+		2F17650632DED5372A36CEE3 /* Pods-ESAutoHeightImageScroll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESAutoHeightImageScroll.release.xcconfig"; path = "Pods/Target Support Files/Pods-ESAutoHeightImageScroll/Pods-ESAutoHeightImageScroll.release.xcconfig"; sourceTree = "<group>"; };
+		69660EF7005645A78DD8DC66 /* libPods-ESAutoHeightImageScroll.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ESAutoHeightImageScroll.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ECC3B6C9BA2D8518B3B2D37 /* libPods-ESAutoHeightImageScroll.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +98,8 @@
 				041FA4A8213936A000278317 /* ESAutoHeightImageScrollTests */,
 				041FA4B3213936A000278317 /* ESAutoHeightImageScrollUITests */,
 				041FA48E2139369D00278317 /* Products */,
+				128EFF84E36141254A140010 /* Pods */,
+				92938B4F19DBCEB9DCC6C67E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +116,14 @@
 		041FA48F2139369D00278317 /* ESAutoHeightImageScroll */ = {
 			isa = PBXGroup;
 			children = (
+				041FA527213A3C4A00278317 /* timg.jpeg */,
+				041FA4C221395F9400278317 /* ESAutoHeightImageScroll */,
 				041FA4902139369D00278317 /* AppDelegate.h */,
 				041FA4912139369D00278317 /* AppDelegate.m */,
 				041FA4932139369D00278317 /* ViewController.h */,
 				041FA4942139369D00278317 /* ViewController.m */,
+				041FA529213A3E8500278317 /* NextViewController.h */,
+				041FA52A213A3E8500278317 /* NextViewController.m */,
 				041FA4962139369D00278317 /* Main.storyboard */,
 				041FA499213936A000278317 /* Assets.xcassets */,
 				041FA49B213936A000278317 /* LaunchScreen.storyboard */,
@@ -132,6 +151,32 @@
 			path = ESAutoHeightImageScrollUITests;
 			sourceTree = "<group>";
 		};
+		041FA4C221395F9400278317 /* ESAutoHeightImageScroll */ = {
+			isa = PBXGroup;
+			children = (
+				041FA4C321395F9400278317 /* ESAutoHeightImageScroll.h */,
+				041FA4C421395F9400278317 /* ESAutoHeightImageScroll.m */,
+			);
+			path = ESAutoHeightImageScroll;
+			sourceTree = "<group>";
+		};
+		128EFF84E36141254A140010 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2035277EFD703A109CF7FFB4 /* Pods-ESAutoHeightImageScroll.debug.xcconfig */,
+				2F17650632DED5372A36CEE3 /* Pods-ESAutoHeightImageScroll.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92938B4F19DBCEB9DCC6C67E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69660EF7005645A78DD8DC66 /* libPods-ESAutoHeightImageScroll.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +184,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041FA4B9213936A000278317 /* Build configuration list for PBXNativeTarget "ESAutoHeightImageScroll" */;
 			buildPhases = (
+				3B95190D19089195E61198BE /* [CP] Check Pods Manifest.lock */,
 				041FA4892139369D00278317 /* Sources */,
 				041FA48A2139369D00278317 /* Frameworks */,
 				041FA48B2139369D00278317 /* Resources */,
@@ -237,6 +283,7 @@
 			files = (
 				041FA49D213936A000278317 /* LaunchScreen.storyboard in Resources */,
 				041FA49A213936A000278317 /* Assets.xcassets in Resources */,
+				041FA528213A3C4A00278317 /* timg.jpeg in Resources */,
 				041FA4982139369D00278317 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,11 +304,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B95190D19089195E61198BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ESAutoHeightImageScroll-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		041FA4892139369D00278317 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041FA52B213A3E8500278317 /* NextViewController.m in Sources */,
+				041FA4C521395F9400278317 /* ESAutoHeightImageScroll.m in Sources */,
 				041FA4952139369D00278317 /* ViewController.m in Sources */,
 				041FA4A0213936A000278317 /* main.m in Sources */,
 				041FA4922139369D00278317 /* AppDelegate.m in Sources */,
@@ -431,11 +501,13 @@
 		};
 		041FA4BA213936A000278317 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2035277EFD703A109CF7FFB4 /* Pods-ESAutoHeightImageScroll.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44S4V5SXM4;
 				INFOPLIST_FILE = ESAutoHeightImageScroll/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +520,13 @@
 		};
 		041FA4BB213936A000278317 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F17650632DED5372A36CEE3 /* Pods-ESAutoHeightImageScroll.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44S4V5SXM4;
 				INFOPLIST_FILE = ESAutoHeightImageScroll/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
